@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-alberdi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabian1123/Proyecto_Alberdi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabian1123/Proyecto_Alberdi/issues"
+  },
+  "homepage": "https://github.com/fabian1123/Proyecto_Alberdi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
