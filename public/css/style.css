@@ -39,7 +39,7 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
-    padding: 20px;
+    padding: 0px;/*Estaba en 20. Lo puse en 0 para que el carrusel ocupara toda la pantalla*/
     overflow:hidden;
     width:100%;
 }
