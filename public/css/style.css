@@ -137,3 +137,16 @@ a svg{
     }
   }
 }
+
+/*Mis estilos*/
+    .img-txt{
+      width: 300px;
+      height: 200px;
+    }
+    .imagenes-miniatura{
+      width: 300px;
+      height: 300px;
+    }
+    .estilosProductos{
+      padding-top: 30px;
+    }
