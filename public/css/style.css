@@ -1,7 +1,9 @@
+/**atributos de los headers**/
 #header, #header2{
   background: #333;
   font: oblique bold 120% cursive;
 }
+/**tipos de letras**/
 #Letra{
   font: oblique bold 120% cursive;
   font-size: 230%;
@@ -11,13 +13,19 @@
   font: oblique bold 120% cursive;
   font-size: 130%;
 }
-
+/**atributos del map**/
 #mapa{
-  width:866px; 
-  height: 378px; 
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/**letras del color de bienvenida**/
+#Bienvenida, #Bienvenida2{
+  color:#ddd;
 }
 
-/* The side navigation menu */
+
+/* El side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -183,3 +191,6 @@ a svg{
       background-color: rgb(236, 231, 160);
 
     }
+   footer{
+    background: #333;
+   }
