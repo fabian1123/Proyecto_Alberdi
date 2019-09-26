@@ -65,7 +65,7 @@
 }
 body {
   overflow-x: hidden;
-  background-color: rgb(190, 233, 236)
+  background-color: rgba(220, 244, 247)
 }
  
 /* Agrega fondo negro a la parte de arriba del menu */
@@ -163,6 +163,9 @@ a svg{
     .estilosProductos{
       padding-top: 30px;
     }
+    .estilosProductoIndividual{
+      background-color: rgba(230, 228, 228, 0.582);
+    }
     .estilosProductos:hover{
       
     }
@@ -177,9 +180,9 @@ a svg{
     }
     /**fondo**/
     #bodyDulces, #bodyConservas, #bodyMermeladas{
-      background-color: rgb(236, 231, 160);
+      background-color: rgb(247, 243, 193);
     }
     #bodySobre{
-      background-color: rgb(236, 231, 160);
+      background-color: rgb(247, 243, 193);
 
     }
