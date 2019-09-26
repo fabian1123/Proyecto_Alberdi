@@ -1,49 +1,114 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Escuela Alberdi</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Escuela Juan Bautista Alberdi</title>
+
 </head>
 
 <body id="bodySobre">
-  <br>
-  <center>
-  <video src="video/EscuelaJuanBautistaAlberdi.mp4" controls width="1200px" height="700px" ></video>
-  </center>
-  <br>
-  <br>
-  <div class="container marketing">
+    <header>
+        <div id="header" class="container-fluid">
+            <br>
+            <div class="row justify-content-center">
+                <h2 class="text-light">SOBRE NOSOTROS</h2>
+            </div>
 
-    
-    <div class="row">
-      <div class="col-lg-4">
-        <img src="img/ali.jpg" width="375px" height="300px">
-        <h2>La Escuela</h2>
-        <p>Se podra saber mas sobre como somos.</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
+        </div>
+
+    </header>
+
+  <!--Menu lateral-->
+  <div class="row">
+    <!--Menu-->
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div id="sideNavigation" class="sidenav">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Menu &times;</a>
+        <a href="index.html">>Inicio</a>
+        <a href="Dulces.html"> >Dulces</a>
+        <a href="Mermeladas.html"> >Mermeladas</a>
+        <a href="Conservas.html"> >Conservas</a>
+        <a href="ProductosInnovadores.html"> >Productos Innovadores</a>
+        <a href="SobreNosotros.html">>Sobre nosotros</a>
       </div>
 
-      <div class="col-lg-4">
-        <img src="img/ali.jpg" width="375px" height="300px">
-        <h2>Como Trabajamos</h2>
-        <p>Aqui podra ver de la forma en la que trabajamos la produccion y elaboracion de algunos de los productos que estan disponibles para su consumo...</p>
-        <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
-      </div>
-
-      <div class="col-lg-4">
-        <img src="img/ali.jpg" width="375px" height="300px">
-        <h2>Nuestros Eventos</h2>
-        <p>Aqui se pueden observar los eventon en los que hemos participado fortaleciendo el compañerismo y la participacion en equipo... </p>
-        <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
-      </div>
+      <nav class="topnav">
+        <a href="#" onclick="openNav()">
+          <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+          </svg>
+        </a>
+      </nav>
     </div>
 
-
+    <div class="container">
     
+      <br>
+      <p id="Letra2">Somos una escuela secundaria ubicada en el departamento de Lavalle, en el distrito de Costa de Araujo, a 60km
+        de
+        la ciudad de Mendoza.
+        Nuestra modalidad de enseñanza esta asociada a la industria frutihortícola y enología.
+        Desde hace ya más de 10 años que poseemos nuestros propios cultivos y nos dedicamos a trabajar con el fruto de
+        la cosecha de
+        los mismos, dedicándonos a trabajar
+        y a la misma vez a aprender. Además nos dedicamos a comercializar los productos que obtenemos de ello.
 
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+      </p>
+
+    </div>
+    <div class="container">
+      <br>
+      <center>
+        <video src="video/EscuelaJuanBautistaAlberdi.mp4" controls width="1200px" height="700px" alt="video presentacion"></video>
+      </center>
+
+    </div>
+
+    <br>
+    <br>
+    <div class="container marketing">
+
+
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="img/ali.jpg" width="375px" height="300px">
+          <h2>La Escuela</h2>
+          <p>Se podra saber mas sobre como somos.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="img/ali.jpg" width="375px" height="300px">
+          <h2>Como Trabajamos</h2>
+          <p>Aqui podra ver de la forma en la que trabajamos la produccion y elaboracion de algunos de los productos que
+            estan disponibles para su consumo...</p>
+          <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="img/ali.jpg" width="375px" height="300px">
+          <h2>Nuestros Eventos</h2>
+          <p>Aqui se pueden observar los eventon en los que hemos participado fortaleciendo el compañerismo y la
+            participacion en equipo... </p>
+          <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
+        </div>
+      </div>
+
+
+
+
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/script.js"></script>
 </body>
+
 </html>

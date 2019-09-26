@@ -2,6 +2,15 @@
   background: #333;
   font: oblique bold 120% cursive;
 }
+#Letra{
+  font: oblique bold 120% cursive;
+  font-size: 230%;
+
+}
+#Letra2{
+  font: oblique bold 120% cursive;
+  font-size: 130%;
+}
 
 #mapa{
   width:866px; 
@@ -23,7 +32,7 @@
     
 }
  
-/* The navigation menu links */
+/* El link del menu de navegacion */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -33,12 +42,12 @@
     transition: 0.3s
 }
  
-/* When you mouse over the navigation links, change their color */
+/* Cuando pasas el mouse por los links del menu cambian de color */
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
 }
  
-/* Position and style the close button (top right corner) */
+/* Posicion y estilo del boton para cerrar el menu */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -47,7 +56,7 @@
     margin-left: 50px;
 }
  
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* Estilo de la pagina de contenido - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
     padding: 0px;/*Estaba en 20. Lo puse en 0 para que el carrusel ocupara toda la pantalla*/
@@ -59,7 +68,7 @@ body {
   background-color: rgb(190, 233, 236)
 }
  
-/* Add a black background color to the top navigation */
+/* Agrega fondo negro a la parte de arriba del menu */
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -82,13 +91,13 @@ body {
     color: black;
 }
  
-/* Add a color to the active/current link */
+/* Agrega color a los links activos */
 .topnav a.active {
     background-color: #4CAF50;
     color: white;
 }
  
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* En pantallas mas pequeñas, donde el alto es menor a 450px, cambia el estilo de sidenav(menos padding y un menor font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -166,6 +175,11 @@ a svg{
     transform: translateY(-15px);
     box-shadow: 0px 3px 20px -2px rgba(117,117,117,1);
     }
-    #bodyDulces, #bodyConservas, #bodyMermeladas, #bodySobre{
+    /**fondo**/
+    #bodyDulces, #bodyConservas, #bodyMermeladas{
       background-color: rgb(236, 231, 160);
+    }
+    #bodySobre{
+      background-color: rgb(236, 231, 160);
+
     }

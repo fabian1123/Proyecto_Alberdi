@@ -1,62 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Catálogo de Escuela Alberdi</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-
 </head>
 
 <body>
-    <header id="header2">
-        <div class="container-fluid">
+    <header>
+        <div id="header" class="container-fluid">
+            <br>
+            <div class="row justify-content-center">
+                <h2 class="text-light">UBICACION</h2>
+            </div>
 
-            <h1 class="text-center text-white">Ubicación de Escuela N° 4-026</h1>
-            <h2 class="text-center text-white">"Juan Bautista Alberdi"</h2>
         </div>
 
     </header>
-    
-         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <div id="sideNavigation" class="sidenav">
 
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &times;</a>
-                    <a href="index.html">>Volver a Inicio</a>
 
-                </div>
+    <!--Menu lateral-->
+    <div class="row">
+        <!--Menu-->
 
-                <nav class="topnav">
-                    <a href="#" onclick="openNav()">
-                        <svg width="30" height="30" id="icoOpen">
-                            <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
-                            <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
-                            <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
-                        </svg>
-                    </a>
-                </nav>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div id="sideNavigation" class="sidenav">
+
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Menu &times;</a>
+                <a href="index.html">>Inicio</a>
+                <a href="Dulces.html"> >Dulces</a>
+                <a href="Mermeladas.html"> >Mermeladas</a>
+                <a href="Conservas.html"> >Conservas</a>
+                <a href="ProductosInnovadores.html"> >Productos Innovadores</a>
+                <a href="SobreNosotros.html">>Sobre nosotros</a>
             </div>
+
+            <nav class="topnav">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+                    </svg>
+                </a>
+            </nav>
         </div>
-    <div id="main">
-        
+        <div id="main">
+
             <div class="row">
                 <div class="container">
-                <div class="col-xs-12">
-                    <img src="img\mapa.png" align="left" class="img-responsive" id="mapa"/>
+                    <div class="col-xs-12">
+                        <br>
+                        <h3 id="Letra2">Direccion: <small>Calle cortadera 142. Costa de Araujo. Lavalle, Mendoza.</small></h3>
+                        <h3 id="Letra2">Teléfono: <small>0263 449-4182</small></h3>
+                        <br>
+                        <img src="img\mapa.png" align="left" class="img-responsive" id="mapa" />
+
+                    </div>
+                   
+                </div>
+                <div class="container"> 
+                                        
+                    <small>Google. (s.f.). [Mapa de Mendoza, Argentina en Google maps]. Recuperado el 25 de Septiembre, 2019, de: https://www.google.com.co/maps/place/School+No.+4-026+"Juan+Bautista+Alberdi"/@-32.738158,-68.3868567,17z/data=!3m1!4b1!4m5!3m4!1s0x967e24de5544f659:0x9d611c70955ab660!8m2!3d-32.738158!4d-68.384668?hl=en</small>
+                    <br>
+                    <br>
+
                 </div>
             </div>
         </div>
-    </div>
-       
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
 
 
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/script.js"></script>
 </body>
 
 </html>
