@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+        contacto
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+     <center> <h1>Juan Bautista Alberdi</h1></center>
+      <br>
+      <h4>Ingrese los datos:</h4>
+      <br>
+      
+        <form action="/enviarDatos" method="POST">
+
+            
+                <!-- Los datos de entrada se realizarán por -->
+                <p>Usuario: <input type="text" name="usuario" id="usuario"></p>
+                <p>Contraseña: <input type="text" name="contraseña" id="contraseña"></p>
+                <input type="submit" value="Enviar">
+                <!-- La ejecución la iniciamos con un botón -->
+            
+        </form>
+        <hr>
+        <form action="/devolverDatos" method="GET">
+          <input type="submit" value="Ver usuarios"></input>
+        </form>
+          
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery/jquery.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>
