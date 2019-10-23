@@ -31,6 +31,10 @@ app.post('/enviarInfo',function(req,res){
 	miVector.push(req.body.telefono);
 	res.send("<h1>se envio con exito el formulario</h1>")
 });
+
+
+
+
  
 app.get('/devolverTabla',function(req,res){
 	res.send(dameTabla(miVector));
@@ -46,4 +50,28 @@ function dameTabla(Vect){
 	return str;
 }
 
+var usuarios = [];
+app.post('/enviarDatos',function(req,res){
+	console.log("/enviarDatos - POST");
+	console.log(req.body.usuario);
+	console.log(req.body.contraseña);
+	
+	usuarios.push(req.body.usuario);
+	usuarios.push(req.body.contraseña);
+	res.send('se ha logueado con exito')
+});
 
+app.get('/devolverDatos',function(req,res){
+	res.send(dameTabla2(usuarios));
+});
+
+function dameTabla2(Vect2){
+	var str2 ="";
+	var i=0;
+	for(i=0;i<Vect2.length;i++){
+		str2 =str2 +"<td>"+Vect2[i]+"</td>";
+	};
+	str2 = "<table border = 1><tr>"+str2+"</tr></table>"
+	console.log(str2);
+	return str2;
+}
