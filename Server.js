@@ -1,8 +1,25 @@
+var fs = require('fs');
+var https = require('https');
 var express = require('express');
+
+   
 var app = express();
 
-//set port
-var port = process.env.PORT || 7070
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+
+
+var options = {
+
+ key: fs.readFileSync('/home/flavia/Escritorio/grupo\ 2/Proyecto_Alberdi/ssl/Server.key'),
+ cert: fs.readFileSync('/home/flavia/Escritorio/grupo\ 2/Proyecto_Alberdi/ssl/Server.crt'),
+ requestCert:false,
+ rejectUnauthorized:false
+};
+
+
+
 
 app.use(express.static(__dirname + "/public"));
 
@@ -10,8 +27,38 @@ app.use(express.static(__dirname + "/public"));
 
 app.get("/",function(req, res){
 	res.render("index");
-})
 
-app.listen(port,function(){
-	console.log("app running");
-})
+});
+var server = https.createServer(options, app).listen(3000, function(){
+
+console.log("https:localhost:3000");
+});
+
+
+var miVector = [];
+app.post('/enviarInfo',function(req,res){
+	console.log("/enviarInfo - POST");
+	console.log(req.body.apellido);
+	
+	miVector.push(req.body.apellido);
+	miVector.push(req.body.nombre);
+	miVector.push(req.body.Correo);
+	miVector.push(req.body.telefono);
+	res.send("<h1>se envio con exito el formulario</h1>")
+});
+ 
+app.get('/devolverTabla',function(req,res){
+	res.send(dameTabla(miVector));
+});
+function dameTabla(Vect){
+	var str ="";
+	var i=0;
+	for(i=0;i<Vect.length;i++){
+		str =str +"<td>"+Vect[i]+"</td>";
+	};
+	str = "<table border = 1><tr>"+str+"</tr></table>"
+	console.log(str);
+	return str;
+}
+
+
