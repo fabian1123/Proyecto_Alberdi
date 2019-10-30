@@ -1,14 +1,36 @@
+var fs = require('fs');
+var https = require('https');
 var express = require('express');
+
+   
 var app = express();
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
+
+
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+
+
+var options = {
+
+ key: fs.readFileSync('/home/flavia/Escritorio/grupo\ 2/Proyecto_Alberdi/ssl/Server.key'),
+ cert: fs.readFileSync('/home/flavia/Escritorio/grupo\ 2/Proyecto_Alberdi/ssl/Server.crt'),
+ requestCert:false,
+ rejectUnauthorized:false
+};
+
+
+
 
 var server  = app.listen(7070,function(){
 	var host = server.address().address;
 	var port = server.address().port;
 	console.log("Example app listening at htpp://%s:%s",host, port)
 });
+ master
 
 app.use(express.static(__dirname + "/public"));
 
@@ -17,6 +39,11 @@ app.use(express.static(__dirname + "/public"));
 app.get("/",function(req, res){
 	res.render("index");
 
+});
+
+var server = https.createServer(options, app).listen(3000, function(){
+
+console.log("https:localhost:3000");
 });
 
 
@@ -31,10 +58,6 @@ app.post('/enviarInfo',function(req,res){
 	miVector.push(req.body.telefono);
 	res.send("<h1>se envio con exito el formulario</h1>")
 });
-
-
-
-
  
 app.get('/devolverTabla',function(req,res){
 	res.send(dameTabla(miVector));
@@ -49,6 +72,7 @@ function dameTabla(Vect){
 	console.log(str);
 	return str;
 }
+
 
 var usuarios = [];
 app.post('/enviarDatos',function(req,res){
