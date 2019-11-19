@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+        Administrador
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+      <div class="row">
+          <!--Menu-->
+      
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div id="sideNavigation" class="sidenav">
+      
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Menu &times;</a>
+              <a href="index.html">>Inicio</a>
+              <a href="Dulces.html"> >Dulces</a>
+              <a href="Mermeladas.html"> >Mermeladas</a>
+              <a href="Conservas.html"> >Conservas</a>
+              <a href="ProductosInnovadores.html"> >Productos Innovadores</a>
+              <a href="SobreNosotros.html">>Sobre nosotros</a>
+              <a href="Contacto.html">>Contacto</a>
+              <a href="signup.html">>Iniciar Sesión</a>
+            </div>
+      
+            <nav class="topnav">
+              <a href="#" onclick="openNav()">
+                <svg width="30" height="30" id="icoOpen">
+                  <path d="M0,5 30,5" stroke="#000" stroke-width="5" />
+                  <path d="M0,14 30,14" stroke="#000" stroke-width="5" />
+                  <path d="M0,23 30,23" stroke="#000" stroke-width="5" />
+                </svg>
+              </a>
+            </nav>
+          </div>
+          <!--Fin Menú-->
+    
+          <div class="container">
+              <div class="col-sm-6 mx-auto">
+                 <div class="card mt-5">
+                   <div class="card-header">
+                     <h4>Inicio Sesion:</h4>
+                   </div>
+                    <div class="card-body">
+                       <form action="/signin" method="POST">
+               
+                           
+                               <!-- Los datos de entrada se realizarán por -->
+                               <div class="form-group">
+                               <input type="text" name="usuario" id="usuario" placeholder="Usuario"
+                               class="form-control">
+                               </div>
+                               <div class="form-group">
+                                   <input type="text" name="contraseña" id="contraseña" placeholder="Contraseña"
+                                   class="form-control">
+                               </div>
+                              
+                               <button type="submit" name="btn"  class="btn btn-primary btn-lg btn-block">Ingresar</button>
+                               <!-- La ejecución la iniciamos con un botón -->
+                           
+                       </form>
+                   
+                 </div>
+               </div>
+             </div>
+           </div>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery/jquery.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+  </body>
+</html>
